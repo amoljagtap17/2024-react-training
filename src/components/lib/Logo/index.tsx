@@ -1,5 +1,9 @@
 import styles from "./Logo.module.less";
 
-export function Logo() {
-  return <span className={styles.Logo__root}>SA</span>;
+interface ILogoProps {
+  name?: string;
+}
+
+export function Logo({ name = "AJ" }: ILogoProps) {
+  return <span className={styles.Logo__root}>{name}</span>;
 }

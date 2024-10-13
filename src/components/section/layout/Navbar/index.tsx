@@ -6,7 +6,7 @@ export function Navbar() {
   return (
     <Container>
       <div className={styles.Navbar__root}>
-        <Logo />
+        <Logo name="SA" />
         <Nav />
       </div>
     </Container>
