@@ -12,7 +12,10 @@ export function ProductCard() {
         Molestiae quas cum sapiente consequatur, eius vel minima rem numquam.
         Neque alias beatae explicabo.
       </div>
-      <div>actions</div>
+      <div className={styles.ProductCard__actions}>
+        <button>Add to Fav</button>
+        <button>Add to Cart</button>
+      </div>
     </div>
   );
 }

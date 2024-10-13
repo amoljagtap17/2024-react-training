@@ -16,4 +16,23 @@
     padding: 1rem 0;
     min-height: 200px;
   }
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+      padding: 0.5rem 1rem;
+      border: none;
+      background-color: inherit;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      border: 2px solid #0a0a0a;
+    }
+
+    button:nth-child(2) {
+      background-color: #0a0a0a;
+      color: white;
+    }
+  }
 }
