@@ -35,3 +35,20 @@ table {
   flex-direction: column;
   min-height: 100vh;
 }
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fdf0d5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0a0a0a;
+  border: 3px solid #fdf0d5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #0a0a0a;
+}
