@@ -1,4 +1,4 @@
-import { Link } from "../../../../lib";
+import { Button, Link } from "../../../../lib";
 import styles from "./Nav.module.less";
 
 const navLinks = [
@@ -22,6 +22,7 @@ export function Nav() {
           </li>
         ))}
       </ul>
+      <Button variant="contained">View Cart</Button>
     </nav>
   );
 }
