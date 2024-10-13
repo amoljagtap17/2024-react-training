@@ -13,16 +13,18 @@ const navLinks = [
 ];
 
 export function Nav() {
+  const listItems = navLinks.map(({ label, path }) => (
+    <li key={label}>
+      <Link href={path} label={label} />
+    </li>
+  ));
+
   return (
     <nav className={styles.Nav__root}>
-      <ul className={styles.Nav__nav}>
-        {navLinks.map(({ label, path }) => (
-          <li key={label}>
-            <Link href={path} label={label} />
-          </li>
-        ))}
-      </ul>
-      <Button variant="contained">View Cart</Button>
+      <ul className={styles.Nav__nav}>{listItems}</ul>
+      <Button variant="contained" onClick={() => {}}>
+        View Cart
+      </Button>
     </nav>
   );
 }

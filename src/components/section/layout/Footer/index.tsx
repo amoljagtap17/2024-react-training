@@ -6,7 +6,7 @@ export function Footer() {
     <footer className={styles.Footer__root}>
       <Container>
         <div className={styles.Footer__content}>
-          <div>&copy; {new Date().toLocaleDateString()}</div>
+          <div>&copy; {new Date().toDateString()}</div>
           <div>React Training</div>
         </div>
       </Container>
