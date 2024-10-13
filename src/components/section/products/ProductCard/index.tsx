@@ -11,8 +11,8 @@ export function ProductCard({ title, price, content }: IProductCardProps) {
       </div>
       <div className={styles.ProductCard__content}>{content}</div>
       <div className={styles.ProductCard__actions}>
-        <Button variant="outlined">Add to Fav</Button>
-        <Button variant="contained">Add to Cart</Button>
+        <Button variant="outlined">Add Fav</Button>
+        <Button variant="contained">Add Cart</Button>
       </div>
     </div>
   );
