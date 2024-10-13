@@ -15,7 +15,7 @@ const navLinks = [
 export function Nav() {
   const listItems = navLinks.map(({ label, path }) => (
     <li key={label}>
-      <Link href={path} label={label} />
+      <Link href={path}>{label}</Link>
     </li>
   ));
 
