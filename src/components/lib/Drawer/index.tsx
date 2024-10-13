@@ -3,7 +3,7 @@ import { createPortal } from "react-dom";
 import styles from "./Drawer.module.less";
 
 interface IDrawerProps {
-  children: ReactElement[];
+  children: ReactElement;
   onClose: () => void;
 }
 
