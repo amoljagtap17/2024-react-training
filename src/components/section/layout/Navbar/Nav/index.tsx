@@ -1,3 +1,6 @@
+import { Link } from "../../../../lib";
+import styles from "./Nav.module.less";
+
 const navLinks = [
   {
     path: "/",
@@ -11,11 +14,11 @@ const navLinks = [
 
 export function Nav() {
   return (
-    <nav>
-      <ul>
+    <nav className={styles.Nav__root}>
+      <ul className={styles.Nav__nav}>
         {navLinks.map(({ label, path }) => (
           <li key={label}>
-            <a href={path}>{label}</a>
+            <Link href={path} label={label} />
           </li>
         ))}
       </ul>
