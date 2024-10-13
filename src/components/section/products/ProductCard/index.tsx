@@ -1,3 +1,4 @@
+import { currencyFormatter } from "../../../../app/utils";
 import { Button } from "../../../lib";
 import { IProductCardProps } from "../types";
 import styles from "./ProductCard.module.less";
@@ -15,7 +16,7 @@ export function ProductCard({ id, title, price, content }: IProductCardProps) {
     <div className={styles.ProductCard__root}>
       <div className={styles.ProductCard__title}>{title}</div>
       <div className={styles.ProductCard__subtitle}>
-        <em>{price}</em>
+        <em>{currencyFormatter(price)}</em>
       </div>
       <div className={styles.ProductCard__content}>{content}</div>
       <div className={styles.ProductCard__actions}>

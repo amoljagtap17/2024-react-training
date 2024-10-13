@@ -1,3 +1,4 @@
+import { currentDate } from "../../../../app/utils";
 import { Container } from "../../../lib";
 import styles from "./Footer.module.less";
 
@@ -8,7 +9,7 @@ export function Footer() {
     <footer className={styles.Footer__root}>
       <Container>
         <div className={styles.Footer__content}>
-          <div>&copy; {new Date().toDateString()}</div>
+          <div>&copy; {currentDate()}</div>
           <div>React Training - version {appVersion}</div>
         </div>
       </Container>
