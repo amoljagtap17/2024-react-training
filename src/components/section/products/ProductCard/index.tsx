@@ -1,17 +1,18 @@
 import styles from "./ProductCard.module.less";
 
-export function ProductCard() {
+interface IProductCardProps {
+  id: string;
+  title: string;
+  price: number;
+  content: string;
+}
+
+export function ProductCard({ title, price, content }: IProductCardProps) {
   return (
     <div className={styles.ProductCard__root}>
-      <div className={styles.ProductCard__title}>Title</div>
-      <div className={styles.ProductCard__subtitle}>758.98</div>
-      <div className={styles.ProductCard__content}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-        consectetur reiciendis voluptates, iste perspiciatis, ducimus facilis
-        sint, expedita ipsa quod reprehenderit illo ipsam est odio eligendi.
-        Molestiae quas cum sapiente consequatur, eius vel minima rem numquam.
-        Neque alias beatae explicabo.
-      </div>
+      <div className={styles.ProductCard__title}>{title}</div>
+      <div className={styles.ProductCard__subtitle}>{price}</div>
+      <div className={styles.ProductCard__content}>{content}</div>
       <div className={styles.ProductCard__actions}>
         <button>Add to Fav</button>
         <button>Add to Cart</button>
