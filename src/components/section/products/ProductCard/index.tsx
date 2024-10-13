@@ -1,11 +1,5 @@
+import { IProductCardProps } from "../types";
 import styles from "./ProductCard.module.less";
-
-interface IProductCardProps {
-  id: string;
-  title: string;
-  price: number;
-  content: string;
-}
 
 export function ProductCard({ title, price, content }: IProductCardProps) {
   return (
