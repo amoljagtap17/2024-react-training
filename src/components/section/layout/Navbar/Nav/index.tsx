@@ -1,4 +1,5 @@
-import { Button, Link } from "../../../../lib";
+import { Link } from "../../../../lib";
+import { ViewCartButton } from "../../../cart";
 import styles from "./Nav.module.less";
 
 const navLinks = [
@@ -22,9 +23,7 @@ export function Nav() {
   return (
     <nav className={styles.Nav__root}>
       <ul className={styles.Nav__nav}>{listItems}</ul>
-      <Button variant="contained" onClick={() => {}}>
-        View Cart
-      </Button>
+      <ViewCartButton />
     </nav>
   );
 }

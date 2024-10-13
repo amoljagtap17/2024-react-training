@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import styles from "./Button.module.less";
 
 interface IButtonProps {
-  variant?: "contained" | "outlined";
+  variant?: "contained" | "outlined" | "primary";
   children: ReactNode;
   onClick: () => void;
 }
@@ -13,7 +13,9 @@ export function Button({
   onClick,
 }: IButtonProps) {
   const classes =
-    variant === "contained"
+    variant === "primary"
+      ? styles.Button__primary
+      : variant === "contained"
       ? styles.Button__contained
       : styles.Button__outlined;
 

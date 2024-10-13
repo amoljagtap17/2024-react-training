@@ -1,8 +1,21 @@
 .Button {
+  &__primary {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #fdf0d5;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    border: 2px solid #0a0a0a;
+    width: 110px;
+    height: 40px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
   &__contained {
     padding: 0.5rem 1rem;
     border: none;
-    background-color: inherit;
     cursor: pointer;
     transition: opacity 0.3s;
     border: 2px solid #0a0a0a;
@@ -18,7 +31,6 @@
   &__outlined {
     padding: 0.5rem 1rem;
     border: none;
-    background-color: inherit;
     cursor: pointer;
     transition: opacity 0.3s;
     border: 2px solid #0a0a0a;

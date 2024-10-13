@@ -11,12 +11,17 @@ export function Link({ href, children }: ILinkProps) {
   const navigate = useNavigate();
 
   const handleOnClick = (event: MouseEvent<HTMLAnchorElement>) => {
+    if (event.metaKey || event.ctrlKey) {
+      return;
+    }
+
     event.preventDefault();
+
     navigate(href);
   };
 
   return (
-    <a onClick={handleOnClick} className={styles.Link__root}>
+    <a href={href} onClick={handleOnClick} className={styles.Link__root}>
       {children}
     </a>
   );
